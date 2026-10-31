@@ -1,0 +1,91 @@
+/* =========================
+   SECTION
+========================= */
+.about-section {
+    padding: 60px 0;
+}
+
+/* =========================
+   TITRE
+========================= */
+.about-title {
+    font-weight: 800;
+    color: var(--primary-blue);
+}
+
+/* =========================
+   TEXTE
+========================= */
+.about-text {
+    color: #555;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* =========================
+   LISTE
+========================= */
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* =========================
+   VIDEO
+========================= */
+.video-box {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.video-box:hover {
+    transform: scale(1.05) rotate(1deg);
+}
+
+/* =========================
+   ANIMATION SCROLL (PRO)
+========================= */
+
+/* état initial (caché) */
+.fade-item,
+.fade-left,
+.fade-right {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+/* animation gauche */
+.fade-left {
+    transform: translateX(-80px);
+}
+
+/* animation droite */
+.fade-right {
+    transform: translateX(80px);
+}
+
+/* état visible */
+.show {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+/* délais pour effet fluide */
+.fade-item.show {
+    transition-delay: 0.1s;
+}
+
+.fade-left.show {
+    transition-delay: 0.2s;
+}
+
+.fade-right.show {
+    transition-delay: 0.4s;
+}

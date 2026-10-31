@@ -1,0 +1,498 @@
+/* ===== SECTION ===== */
+.cta-section {
+    padding: 0;
+    margin-top: 40px; /* ✅ ajoute un espace entre le diapo et la bannière */
+}
+
+/* ===== BOÎTE PRINCIPALE ===== */
+.cta-box {
+    background: linear-gradient(
+        135deg,
+        #1F3A5F 0%,
+        #2E7A4F 50%,
+        #1a3d5c 100%
+    );
+    border-radius: 28px;
+    padding: 60px 50px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(31,58,95,0.3);
+    width: 100%;
+    max-height: 450px; /* ✅ diminue la longueur */
+    overflow: hidden;
+}
+
+.cta-box {
+    padding: 35px 50px; /* ✅ réduit le haut et bas */
+}
+/* ===== CERCLES DÉCORATIFS ===== */
+.cta-bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+}
+
+.circle1 {
+    width: 400px;
+    height: 400px;
+    top: -150px;
+    right: -100px;
+    animation: rotateSlow 20s linear infinite;
+}
+
+.circle2 {
+    width: 250px;
+    height: 250px;
+    bottom: -80px;
+    left: -60px;
+    background: rgba(232,103,26,0.1);
+    animation: rotateSlow 15s linear infinite reverse;
+}
+
+.circle3 {
+    width: 180px;
+    height: 180px;
+    top: 40%;
+    left: 40%;
+    background: rgba(255,255,255,0.04);
+    animation: rotateSlow 25s linear infinite;
+}
+
+@keyframes rotateSlow {
+    from { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(180deg) scale(1.1); }
+    to   { transform: rotate(360deg) scale(1); }
+}
+
+/* ===== ICÔNES FLOTTANTES ===== */
+.cta-float-icon {
+    position: absolute;
+    font-size: 36px;
+    opacity: 0.1;
+    color: white;
+    animation: floatIcon 6s ease-in-out infinite;
+}
+
+.icon1 { top: 12%; left: 8%;  animation-delay: 0s; }
+.icon2 { bottom: 18%; right: 12%; animation-delay: 2s; }
+.icon3 { top: 55%; left: 45%; animation-delay: 4s; font-size: 28px; }
+.icon4 { top: 20%; right: 30%; animation-delay: 1s; font-size: 30px; }
+
+@keyframes floatIcon {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50%       { transform: translateY(-18px) rotate(8deg); }
+}
+
+/* ===== BADGE HORAIRES ===== */
+
+/* ===== BADGE ===== */
+.cta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(232,103,26,0.25);
+    border: 1px solid rgba(232,103,26,0.5);
+    color: #E8671A;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute; /* ✅ positionné en haut à gauche */
+    top: 20px;
+    left: 24px;
+    z-index: 3;
+}
+.cta-badge i {
+    color: #ffd166;
+    animation: pulse 1.5s infinite;
+}
+
+/* ===== CONTENU 2 COLONNES ===== */
+.cta-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== COLONNE GAUCHE ===== */
+.cta-left {
+    flex: 1.2;
+}
+
+/* ===== TAG ===== */
+.cta-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.9);
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255,255,255,0.2);
+    letter-spacing: 0.5px;
+}
+
+/* ===== TITRE ===== */
+.cta-title {
+    font-size: clamp(26px, 3.5vw, 42px);
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+
+.cta-title-accent {
+    background: linear-gradient(90deg, #E8671A, #f9a05f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== DESCRIPTION ===== */
+
+.cta-desc {
+    color: rgba(255,255,255,0.85);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    text-align: center; /* ✅ ajoute cette ligne */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+/* ===== POINTS FORTS ===== */
+
+.cta-points {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 3;
+    text-align: left;
+}
+
+.cta-point {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.9);
+    font-size: 13px;
+    font-weight: 500;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 7px 14px;
+    border-radius: 25px;
+}
+
+.cta-point-icon {
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+/* ===== BOUTONS ===== */
+.cta-btns {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.cta-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #E8671A, #d4541a);
+    color: white !important;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 24px rgba(232,103,26,0.5);
+}
+
+.cta-btn-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(232,103,26,0.65);
+    color: white !important;
+}
+
+.cta-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.12);
+    color: white !important;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.35);
+    transition: all 0.3s ease;
+}
+
+.cta-btn-secondary:hover {
+    background: rgba(255,255,255,0.22);
+    transform: translateY(-4px);
+    color: white !important;
+}
+
+/* ===== COLONNE DROITE ===== */
+.cta-right {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== GRILLE STATS ===== */
+.cta-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.cta-stat {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 18px;
+    padding: 20px 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+}
+
+.cta-stat:hover {
+    background: rgba(255,255,255,0.18);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.cta-stat-icon {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.cta-stat strong {
+    display: block;
+    font-size: 24px;
+    font-weight: 800;
+    color: #E8671A;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.cta-stat span {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/* ===== CARTE URGENCE ===== */
+.cta-urgence {
+    background: rgba(232,103,26,0.15);
+    border: 1px solid rgba(232,103,26,0.35);
+    border-radius: 16px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.cta-urgence-dot {
+    width: 12px;
+    height: 12px;
+    background: #E8671A;
+    border-radius: 50%;
+    flex-shrink: 0;
+    animation: pulse 1.2s infinite;
+    box-shadow: 0 0 0 0 rgba(232,103,26,0.5);
+}
+
+@keyframes pulse {
+    0%  { box-shadow: 0 0 0 0 rgba(232,103,26,0.5); }
+    70% { box-shadow: 0 0 0 8px rgba(232,103,26,0); }
+    100%{ box-shadow: 0 0 0 0 rgba(232,103,26,0); }
+}
+
+.cta-urgence strong {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.cta-urgence p {
+    color: rgba(255,255,255,0.7);
+    font-size: 12px;
+    margin: 0;
+}
+
+.cta-urgence-btn {
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    background: #25D366;
+    color: white !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.cta-urgence-btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 16px rgba(37,211,102,0.5);
+}
+
+/* ===== VAGUE ===== */
+.cta-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 1;
+}
+
+.cta-wave svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+@media (max-width: 768px) {
+
+    .cta-box {
+        padding: 20px 16px 40px;
+        border-radius: 20px;
+    }
+
+    /* Badge et points en position statique sur mobile */
+    .cta-badge {
+        position: static !important;
+        transform: none !important;
+        display: inline-flex;
+        margin-bottom: 12px;
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    .cta-points {
+        position: static !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .cta-point {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    /* Réorganise le contenu en colonne */
+    .cta-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .cta-desc {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+
+    .cta-btn-primary {
+        width: 100%;
+        justify-content: center;
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    /* Cache les icônes flottantes sur mobile */
+    .cta-float-icon {
+        display: none;
+    }
+
+    .cta-bg-circle {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .cta-points {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-badge {
+        font-size: 11px;
+    }
+
+    .cta-title {
+        font-size: 20px;
+    }
+}
+
+/* Desktop — badge et points absolus */
+.cta-top-bar {
+    position: relative;
+    z-index: 3;
+    height: 0; /* invisible sur desktop */
+}
+
+/* Mobile — devient une vraie barre visible */
+@media (max-width: 768px) {
+    .cta-top-bar {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    /* Sur mobile les positions absolues sont annulées */
+    .cta-badge {
+        position: static !important;
+        transform: none !important;
+    }
+
+    .cta-points {
+        position: static !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

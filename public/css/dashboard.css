@@ -1,0 +1,471 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #f4f7fb;
+
+    overflow-x: hidden;
+
+    font-family: Arial, sans-serif;
+
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 250px;
+
+    height: 100vh;
+
+    background: linear-gradient(180deg, #1f3c88, #15295f);
+
+    padding: 50px;
+
+    overflow-y: auto;
+
+    z-index: 2000;
+
+    transition: left 0.3s ease;
+
+}
+
+/* TITRE SIDEBAR */
+
+.sidebar h3 {
+
+    color: white;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+@keyframes pulse {
+    0%   { transform: scale(1);   opacity: 1; }
+    50%  { transform: scale(1.2); opacity: 0.8; }
+    100% { transform: scale(1);   opacity: 1; }
+}
+/* MENU */
+
+.sidebar .nav-link {
+
+    color: white !important;
+
+    border-radius: 10px;
+
+    padding: 12px 15px;
+
+    margin-bottom: 10px;
+
+    transition: 0.3s;
+
+    font-weight: 500;
+
+}
+
+/* HOVER MENU */
+
+.sidebar .nav-link:hover {
+
+    background-color: #fe780a;
+
+    transform: translateX(5px);
+
+}
+
+/* LIEN ACTIF */
+
+.sidebar .nav-link.active {
+
+    background-color: #fe780a;
+
+}
+
+/* =========================
+   CONTENU PRINCIPAL
+========================= */
+
+.main-content {
+
+    margin-left: 250px;
+
+   flex: 1;
+
+    padding: 30px;
+
+    min-height: 100vh;
+
+    transition: all 0.3s ease;
+
+    overflow-x: hidden;
+
+}
+
+/* TITRE */
+
+h1 {
+
+    color: #1f3c88;
+
+    font-weight: bold;
+
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+
+    border: none !important;
+
+    border-radius: 18px !important;
+
+    overflow: hidden;
+
+    background: white;
+
+}
+
+/* OMBRES */
+
+.shadow {
+
+    box-shadow: 0 5px 20px rgba(31, 60, 136, 0.12) !important;
+
+}
+
+/* TITRES CARDS */
+
+.card h5 {
+
+    color: #1f3c88;
+
+    font-weight: 600;
+
+}
+
+/* CHIFFRES */
+
+.card h2 {
+
+    color: #fe780a;
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+}
+
+/* =========================
+   CALENDRIER
+========================= */
+
+#calendar {
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+}
+
+/* EVENEMENTS */
+
+.fc-event {
+
+    background: linear-gradient(135deg, #1f3c88, #fe780a) !important;
+
+    border: none !important;
+
+    color: white !important;
+
+    font-weight: bold !important;
+
+    border-radius: 10px !important;
+
+    padding: 4px !important;
+
+    box-shadow: 0 0 10px rgba(31, 60, 136, 0.4) !important;
+
+    font-size: 13px !important;
+
+}
+
+/* HOVER EVENT */
+
+.fc-event:hover {
+
+    transform: scale(1.03);
+
+    transition: 0.2s ease;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 15px rgba(254, 120, 10, 0.8) !important;
+
+}
+
+/* HEADER CALENDRIER */
+
+.fc-toolbar-title {
+
+    color: #1f3c88;
+
+    font-weight: bold;
+
+}
+
+/* BOUTONS CALENDRIER */
+
+.fc-button {
+
+    background-color: #1f3c88 !important;
+
+    border: none !important;
+
+    border-radius: 8px !important;
+
+}
+
+.fc-button:hover {
+
+    background-color: #fe780a !important;
+
+}
+
+/* =========================
+   BOUTON MOBILE
+========================= */
+
+.mobile-menu-btn {
+
+    position: fixed;
+
+    top: 80px;
+
+    left: 15px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #fe780a;
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    z-index: 99999;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* BOUTON */
+
+    .mobile-menu-btn {
+
+        display: flex !important;
+
+    }
+
+    /* SIDEBAR */
+
+    .sidebar {
+
+        left: -260px;
+
+        width: 250px;
+
+    }
+
+    .sidebar.active {
+
+        left: 0;
+
+    }
+
+    /* CONTENU */
+
+  .main-content {
+
+    margin-left: 0 !important;
+
+    width: 100% !important;
+
+    padding: 100px 15px 20px 15px;
+
+}
+
+    /* CARDS */
+
+    .card {
+
+        margin-bottom: 20px;
+
+    }
+
+    /* CALENDRIER */
+
+    #calendar {
+
+        overflow-x: auto;
+
+    }
+
+    /* FOOTER */
+
+    footer {
+
+        width: 100% !important;
+
+        margin-left: 0 !important;
+
+        text-align: center;
+
+        padding: 15px;
+
+    }
+
+}
+
+.fc {
+
+    font-size: 12px;
+
+}
+
+.fc-toolbar {
+
+    flex-direction: column !important;
+
+    gap: 10px;
+
+}
+
+.fc-toolbar-title {
+
+    font-size: 20px !important;
+
+    text-align: center;
+
+}
+
+.fc-button {
+
+    padding: 5px 10px !important;
+
+    font-size: 12px !important;
+
+}
+
+/* =========================
+   NOTIFICATIONS
+========================= */
+
+.notification-item {
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #f8f9fc;
+
+    margin-bottom: 12px;
+
+    border-left: 5px solid #fe780a;
+
+    transition: 0.3s;
+
+}
+
+.notification-item:hover {
+
+    transform: translateX(5px);
+
+    background: #eef3ff;
+
+}
+
+.notification-item strong {
+
+    color: #1f3c88;
+
+}
+
+.notification-item small {
+
+    color: #666;
+
+}
+
+/* =========================
+   GRAPHIQUE
+========================= */
+
+#statsChart{
+
+    width: 100% !important;
+
+    height: 350px !important;
+
+}
+.card {
+
+    width: 100%;
+
+    overflow: hidden;
+
+}
+
+canvas {
+
+    max-width: 100% !important;
+
+}
+
+.dashboard-wrapper {
+
+    display: flex;
+
+    width: 100%;
+
+}

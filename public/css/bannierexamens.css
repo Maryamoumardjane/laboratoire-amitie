@@ -1,0 +1,297 @@
+/* ===== SECTION ===== */
+.cta-examens-section {
+    padding: 0;
+}
+
+/* ===== BOÎTE ===== */
+.cta-examens-box {
+    background: linear-gradient(
+        135deg,
+        #1F3A5F 0%,
+        #2E7A4F 50%,
+        #1a3d5c 100%
+    );
+    border-radius: 28px;
+    padding: 60px 50px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(31,58,95,0.3);
+    width: 100%;
+     max-height: 510px; /* ✅ diminue la longueur */
+    text-align: center;
+}
+
+/* ===== CERCLES DÉCO ===== */
+.cta-examens-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+}
+
+.cta-examens-circle.circle1 {
+    width: 350px;
+    height: 350px;
+    top: -120px;
+    right: -80px;
+    animation: rotateSlow 20s linear infinite;
+}
+
+.cta-examens-circle.circle2 {
+    width: 220px;
+    height: 220px;
+    bottom: -70px;
+    left: -50px;
+    background: rgba(232,103,26,0.08);
+    animation: rotateSlow 15s linear infinite reverse;
+}
+
+/* ===== ICÔNES FLOTTANTES ===== */
+.cta-examens-icon {
+    position: absolute;
+    font-size: 36px;
+    opacity: 0.1;
+    color: white;
+    animation: floatIcon 6s ease-in-out infinite;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.cta-examens-icon:hover {
+    opacity: 0.35;
+    transform: scale(1.2);
+}
+
+.cta-examens-icon.icon1 { top: 15%; left: 6%;  animation-delay: 0s; }
+.cta-examens-icon.icon2 { bottom: 20%; left: 18%; animation-delay: 2s; }
+.cta-examens-icon.icon3 { top: 50%; right: 8%;  animation-delay: 4s; }
+.cta-examens-icon.icon4 { top: 20%; right: 28%; animation-delay: 1s; font-size: 28px; }
+
+/* ===== BADGE HORAIRES — haut gauche ===== */
+.cta-examens-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(232,103,26,0.25);
+    border: 1px solid rgba(232,103,26,0.5);
+    color: #E8671A;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    z-index: 3;
+}
+
+.cta-examens-badge i {
+    color: #ffd166;
+    animation: pulse 1.5s infinite;
+}
+
+/* ===== POINTS — haut droite ===== */
+.cta-examens-points {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 3;
+}
+
+.cta-examens-point {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.9);
+    font-size: 13px;
+    font-weight: 500;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 7px 14px;
+    border-radius: 25px;
+    text-align: left;
+}
+
+/* ===== CONTENU CENTRÉ ===== */
+.cta-examens-center {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ===== TAG ===== */
+.cta-examens-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.9);
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255,255,255,0.2);
+    letter-spacing: 0.5px;
+}
+
+/* ===== TITRE ===== */
+.cta-examens-title {
+    font-size: clamp(24px, 3.5vw, 40px);
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.cta-examens-accent {
+    background: linear-gradient(90deg, #E8671A, #f9a05f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== DESCRIPTION ===== */
+.cta-examens-desc {
+    color: rgba(255,255,255,0.85);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+/* ===== BOUTON ===== */
+.cta-examens-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #E8671A, #d4541a);
+    color: white !important;
+    padding: 14px 36px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 24px rgba(232,103,26,0.5);
+}
+
+.cta-examens-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(232,103,26,0.65);
+    color: white !important;
+}
+
+/* ===== VAGUE ===== */
+.cta-examens-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 1;
+}
+
+.cta-examens-wave svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+@media (max-width: 768px) {
+
+    .cta-examens-box {
+        padding: 80px 20px 40px;
+        border-radius: 20px;
+    }
+
+    .cta-examens-points {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .cta-examens-badge {
+        position: static;
+        display: inline-flex;
+        margin-bottom: 16px;
+    }
+
+    .cta-examens-icon {
+        display: none;
+    }
+
+    .cta-examens-title {
+        font-size: 22px;
+    }
+}
+
+/* ===========================
+   ANIMATIONS AU SCROLL
+=========================== */
+
+/* États initiaux — caché */
+.anim-fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.anim-slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.anim-slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.anim-zoom {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* États visibles — animé */
+.anim-fade-up.visible,
+.anim-slide-left.visible,
+.anim-slide-right.visible,
+.anim-zoom.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* ===== EFFET GLOW SUR LA BOÎTE AU SCROLL ===== */
+.cta-examens-box {
+    transition: box-shadow 0.5s ease;
+}
+
+.cta-examens-box.visible {
+    box-shadow: 0 30px 80px rgba(31,58,95,0.4),
+                0 0 60px rgba(46,122,79,0.15);
+}
+
+/* ===== COMPTEUR ANIMÉ SUR LES POINTS ===== */
+.cta-examens-point {
+    transition: all 0.3s ease;
+}
+
+.cta-examens-point.visible {
+    animation: bounceIn 0.5s ease forwards;
+}
+
+@keyframes bounceIn {
+    0%   { transform: scale(0.8); opacity: 0; }
+    60%  { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+}

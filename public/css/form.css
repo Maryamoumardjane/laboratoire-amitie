@@ -1,0 +1,46 @@
+.form-box {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-title {
+    color: var(--orange);
+    font-weight: 800;
+}
+
+.btn-main {
+    background: var(--orange);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-main:hover {
+    background: #d68910;
+}
+
+.form-control:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 5px rgba(243,156,18,0.5);
+}
+
+/* CTA */
+.bg-success{
+    background: linear-gradient(135deg, var(--blue), var(--green)) !important;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.bg-success:hover{
+    transform: scale(1.02);
+}
+
+.fade-up {
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+    from {opacity:0; transform: translateY(40px);}
+    to {opacity:1; transform: translateY(0);}
+}

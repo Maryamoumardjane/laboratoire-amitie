@@ -1,0 +1,287 @@
+/* ===== SECTION RDV ===== */
+.rdv-section {
+    background: var(--bg-light, #F5F8FA);
+}
+
+/* ===== TITRE ===== */
+.rdv-titre {
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 800;
+    color: #1F3A5F;
+    margin-bottom: 12px;
+}
+
+/* ===== SUBTITLE ===== */
+.rdv-subtitle {
+    color: #6B7280;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* ===== AVANTAGES ===== */
+.rdv-avantages {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.rdv-avantage-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 18px;
+    background: white;
+    border-radius: 14px;
+    border: 1px solid #e8ecf0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(31,58,95,0.06);
+}
+
+.rdv-avantage-item:hover {
+    border-color: #2E7A4F;
+    box-shadow: 0 6px 20px rgba(46,122,79,0.12);
+    transform: translateX(4px);
+}
+
+.rdv-avantage-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(46,122,79,0.1), rgba(31,58,95,0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    border: 1px solid rgba(46,122,79,0.15);
+}
+
+.rdv-avantage-item strong {
+    display: block;
+    color: #1F3A5F;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.rdv-avantage-item p {
+    color: #6B7280;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ===== CARTE FORMULAIRE ===== */
+.rdv-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 16px 50px rgba(31,58,95,0.12);
+    border: 1px solid #e8ecf0;
+}
+
+/* EN-TÊTE */
+.rdv-card-header {
+    background: linear-gradient(135deg, #1F3A5F, #2E7A4F);
+    padding: 24px 28px;
+}
+
+.rdv-card-header h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0 4px;
+}
+
+.rdv-card-header p {
+    color: rgba(255,255,255,0.75);
+    font-size: 13px;
+    margin: 0;
+}
+
+/* CORPS */
+.rdv-card-body {
+    padding: 28px;
+}
+
+/* ===== LABELS ===== */
+.rdv-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1F3A5F;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px;
+}
+
+/* ===== INPUTS ===== */
+.rdv-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e8ecf0;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #333;
+    background: #fafbfc;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rdv-input:focus {
+    border-color: #2E7A4F;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(46,122,79,0.1);
+}
+
+/* ===== PRIX BOX ===== */
+.prix-card {
+    background: linear-gradient(135deg, rgba(46,122,79,0.08), rgba(31,58,95,0.05));
+    border-radius: 14px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-left: 4px solid #2E7A4F;
+    border: 1px solid rgba(46,122,79,0.2);
+    border-left: 4px solid #2E7A4F;
+}
+
+.prix-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.prix-label {
+    color: #6B7280;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.prix-valeur {
+    color: #1F3A5F;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.prix-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(46,122,79,0.25);
+}
+
+/* ===== INFO BOX ===== */
+.rdv-info-box {
+    background: linear-gradient(135deg, rgba(31,58,95,0.06), rgba(46,122,79,0.05));
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 13px;
+    color: #1F3A5F;
+    font-weight: 500;
+    border-left: 4px solid #1F3A5F;
+    border: 1px solid rgba(31,58,95,0.15);
+    border-left: 4px solid #1F3A5F;
+}
+
+/* ===== BOUTON ===== */
+.rdv-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #E8671A, #d4541a);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(232,103,26,0.4);
+    letter-spacing: 0.3px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rdv-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(232,103,26,0.55);
+}
+
+.rdv-btn:active {
+    transform: translateY(0);
+}
+
+/* ===== ALERTS ===== */
+.alert-success {
+    background: linear-gradient(135deg, rgba(46,122,79,0.1), rgba(31,58,95,0.06));
+    border: 1px solid rgba(46,122,79,0.3);
+    color: #2E7A4F;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+}
+
+.alert-danger {
+    background: rgba(220,53,69,0.08);
+    border: 1px solid rgba(220,53,69,0.25);
+    color: #dc3545;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+}
+
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+@media (max-width: 768px) {
+
+    .rdv-avantage-item:hover {
+        transform: none;
+    }
+
+    .rdv-card-body {
+        padding: 20px;
+    }
+
+    .rdv-card-header {
+        padding: 20px;
+    }
+
+    .rdv-titre {
+        font-size: 26px;
+    }
+
+    .prix-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .prix-divider {
+        width: 100%;
+        height: 1px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .rdv-avantages {
+        gap: 12px;
+    }
+
+    .rdv-avantage-item {
+        padding: 12px 14px;
+    }
+
+    .rdv-btn {
+        padding: 13px;
+        font-size: 14px;
+    }
+}
+
+

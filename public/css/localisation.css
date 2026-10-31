@@ -1,0 +1,9 @@
+.map-box {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.map-box:hover {
+    transform: scale(1.01);
+}
